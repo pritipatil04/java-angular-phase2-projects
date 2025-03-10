@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="feedback_styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form action="/submit-feedback" method="post">
+      <h1>Feedback Form</h1>
+      
+      <label>Rate your experience:</label>
+      <div class="rating">
+        <label><input type="radio" name="rating" value="1"> 1</label>
+        <label><input type="radio" name="rating" value="2"> 2</label>
+        <label><input type="radio" name="rating" value="3"> 3</label>
+        <label><input type="radio" name="rating" value="4"> 4</label>
+        <label><input type="radio" name="rating" value="5"> 5</label>
+      </div>
+      
+      <label for="comments">Your Comments:</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Enter your feedback here..." required></textarea>
+      
+      <button type="submit" class="btn">Submit Feedback</button>
+    </form>
+  </div>
+</body>
+</html>

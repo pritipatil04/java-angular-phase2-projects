@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poll Form</title>
+  <link rel="stylesheet" href="poll-styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Poll Form</h1>
+    <form action="/submit-poll" method="post">
+      <label>Which is your favorite programming language?</label>
+      <div class="options">
+        <label><input type="radio" name="language" value="Python"> Python</label>
+        <label><input type="radio" name="language" value="Java"> Java</label>
+        <label><input type="radio" name="language" value="C++"> C++</label>
+        <label><input type="radio" name="language" value="JavaScript"> JavaScript</label>
+      </div>
+      
+      <label>What technologies are you interested in?</label>
+      <div class="options">
+        <label><input type="checkbox" name="tech" value="AI"> Artificial Intelligence</label>
+        <label><input type="checkbox" name="tech" value="Web"> Web Development</label>
+        <label><input type="checkbox" name="tech" value="Cloud"> Cloud Computing</label>
+        <label><input type="checkbox" name="tech" value="Cyber"> Cybersecurity</label>
+      </div>
+      
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form</title>
+  <link rel="stylesheet" href="order_styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Place Your Order</h1>
+    <form action="/order" method="post">
+      <label for="shipping">Choose Shipping Method:</label>
+      <select id="shipping" name="shipping">
+        <option value="standard">Standard Shipping</option>
+        <option value="express">Express Shipping</option>
+      </select>
+      
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" required>
+      
+      <button type="submit" class="btn">Submit Order</button>
+    </form>
+  </div>
+</body>
+</html>

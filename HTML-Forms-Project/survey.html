@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="survey_styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form action="/submit-survey" method="post">
+      <h1>Survey Form</h1>
+      
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label>How satisfied are you with our service?</label>
+      <label><input type="radio" name="satisfaction" value="very-satisfied"> Very Satisfied</label>
+      <label><input type="radio" name="satisfaction" value="satisfied"> Satisfied</label>
+      <label><input type="radio" name="satisfaction" value="neutral"> Neutral</label>
+      <label><input type="radio" name="satisfaction" value="dissatisfied"> Dissatisfied</label>
+      <label><input type="radio" name="satisfaction" value="very-dissatisfied"> Very Dissatisfied</label>
+      
+      <label>What features do you like? (Select all that apply)</label>
+      <label><input type="checkbox" name="features" value="design"> Design</label>
+      <label><input type="checkbox" name="features" value="usability"> Usability</label>
+      <label><input type="checkbox" name="features" value="performance"> Performance</label>
+      <label><input type="checkbox" name="features" value="support"> Customer Support</label>
+      
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" rows="4"></textarea>
+      
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
